@@ -1,0 +1,6 @@
+display.c:14:6:display7SEG	16	static
+display.c:126:7:update7SEG	16	static
+display.c:171:7:updateClockBuffer1	4	static
+display.c:210:7:updateClockBuffer2	4	static
+display.c:221:7:updateClockBuffer3	4	static
+display.c:231:7:updateClockBuffer4	4	static
