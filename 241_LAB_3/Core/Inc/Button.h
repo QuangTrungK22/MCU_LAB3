@@ -16,7 +16,7 @@
 
 #define num_of_Buttons 3
 
-isButtonPressed(int index);
+int isButtonPressed(int index);
 void getKeyInput();
 
 #endif /* INC_BUTTON_H_ */

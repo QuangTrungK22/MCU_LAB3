@@ -10,13 +10,14 @@
 	}
 
 	void timerRun(){
-		for(int i = 0 ; i < num; ++i){
+		for(int i = 0 ; i < 5 ; i++){
 			if(timer_counter[i] > 0)
 			{
 				timer_counter[i]--;
 			}
-			if(timer_counter <= 0)
-				tỉmer_flag[i] = 1;
+			else
+				timer_flag[i] = 1;
+
 		}
 	}
 
