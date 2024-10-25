@@ -78,10 +78,10 @@ void Error_Handler(void);
 #define SEG1_GPIO_Port GPIOB
 #define SEG2_Pin GPIO_PIN_2
 #define SEG2_GPIO_Port GPIOB
-#define LED_GREEN_Y2_Pin GPIO_PIN_8
+#define LED_YELLOW_Y2_Pin GPIO_PIN_8
+#define LED_YELLOW_Y2_GPIO_Port GPIOA
+#define LED_GREEN_Y2_Pin GPIO_PIN_9
 #define LED_GREEN_Y2_GPIO_Port GPIOA
-#define LED_GREEN_Y2A9_Pin GPIO_PIN_9
-#define LED_GREEN_Y2A9_GPIO_Port GPIOA
 #define Light_Y1_Pin GPIO_PIN_10
 #define Light_Y1_GPIO_Port GPIOA
 #define Light_Y2_Pin GPIO_PIN_11

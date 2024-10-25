@@ -11,8 +11,8 @@
 #include "main.h"
 #include "Timer.h"
 
-#define NORMAL_STATE  0
-#define PRESSED_STATE 1
+#define NORMAL_STATE  SET
+#define PRESSED_STATE RESET
 
 #define num_of_Buttons 3
 

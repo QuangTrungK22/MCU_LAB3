@@ -19,12 +19,14 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "Timer.h"
-#include "Button.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "Timer.h"
+#include "Button.h"
+#include "global_ban.h"
+#include "fsm_traffic_lights.h"
+#include "display.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -91,16 +93,19 @@ int main(void)
   MX_TIM2_Init();
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-
+  HAL_TIM_Base_Start_IT(&htim2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   while (1)
   {
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  fsm_traffic_lights();
   }
   /* USER CODE END 3 */
 }
@@ -200,7 +205,7 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, LED_RED_X1_Pin|LED_YELLOW_X1_Pin|LED_GREEN_X1_Pin|LED_RED_Y2_Pin
-                          |LED_GREEN_Y2_Pin|LED_GREEN_Y2A9_Pin|Light_Y1_Pin|Light_Y2_Pin
+                          |LED_YELLOW_Y2_Pin|LED_GREEN_Y2_Pin|Light_Y1_Pin|Light_Y2_Pin
                           |Light_X1_Pin|Light_X2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
@@ -210,14 +215,14 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pins : Select_Mode_Pin Modify_Mode_Pin Set_Value_Pin */
   GPIO_InitStruct.Pin = Select_Mode_Pin|Modify_Mode_Pin|Set_Value_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : LED_RED_X1_Pin LED_YELLOW_X1_Pin LED_GREEN_X1_Pin LED_RED_Y2_Pin
-                           LED_GREEN_Y2_Pin LED_GREEN_Y2A9_Pin Light_Y1_Pin Light_Y2_Pin
+                           LED_YELLOW_Y2_Pin LED_GREEN_Y2_Pin Light_Y1_Pin Light_Y2_Pin
                            Light_X1_Pin Light_X2_Pin */
   GPIO_InitStruct.Pin = LED_RED_X1_Pin|LED_YELLOW_X1_Pin|LED_GREEN_X1_Pin|LED_RED_Y2_Pin
-                          |LED_GREEN_Y2_Pin|LED_GREEN_Y2A9_Pin|Light_Y1_Pin|Light_Y2_Pin
+                          |LED_YELLOW_Y2_Pin|LED_GREEN_Y2_Pin|Light_Y1_Pin|Light_Y2_Pin
                           |Light_X1_Pin|Light_X2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -239,7 +244,7 @@ static void MX_GPIO_Init(void)
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
     timerRun();
-    getKeyInput();
+
   }
 /* USER CODE END 4 */
 

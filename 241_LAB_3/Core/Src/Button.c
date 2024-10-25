@@ -5,7 +5,7 @@
  *      Author: Quang Trung
  */
 #include "Button.h"
-#include "main.h"
+
 
 	int keyReg0[num_of_Buttons] = {NORMAL_STATE};
 	int keyReg1[num_of_Buttons] = {NORMAL_STATE};
@@ -49,11 +49,11 @@
 								subKeyProcess(i);
 								if (long_press_flag[i] == 0)
 								{
-									timeOutForKeyPress[i] = 4000 / TIME_CYCLE;
+									timeOutForKeyPress[i] = 2000 / TIME_CYCLE;
 								}
 								else
 								{
-									timeOutForKeyPress[i] = 500 / TIME_CYCLE;
+									timeOutForKeyPress[i] = 250 / TIME_CYCLE;
 								}
 							}
 						}

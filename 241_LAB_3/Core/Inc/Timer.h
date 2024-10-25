@@ -12,6 +12,6 @@ extern int timer_flag[num];
 extern int TIME_CYCLE;
 void setTimer(int index, int duration);
 void timerRun();
-void ClearTimer();
+void ClearTimer(int index);
 
 #endif /* INC_TIMER_H_ */
