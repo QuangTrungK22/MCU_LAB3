@@ -110,6 +110,7 @@ int main(void)
   while (1)
   {
 	  fsm_traffic_lights();
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -223,7 +224,7 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pins : Select_Mode_Pin Modify_Mode_Pin Set_Value_Pin */
   GPIO_InitStruct.Pin = Select_Mode_Pin|Modify_Mode_Pin|Set_Value_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : LED_RED_X1_Pin LED_YELLOW_X1_Pin LED_GREEN_X1_Pin LED_RED_Y2_Pin
@@ -250,13 +251,11 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
-	if(htim -> Instance == TIM2){
-		getKeyInput(0);
-		getKeyInput(1);
-		getKeyInput(2);
+
 		timerRun();
+		getKeyInput();
 	}
-}
+
 /* USER CODE END 4 */
 
 /**

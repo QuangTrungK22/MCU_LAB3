@@ -3,4 +3,4 @@ display.c:127:7:update7SEG	16	static
 display.c:172:7:updateClockBuffer1	16	static
 display.c:184:7:updateClockBuffer2	16	static
 display.c:206:7:Time_Counter	8	static
-display.c:216:8:UpdateMODE	16	static
+display.c:220:8:UpdateMODE	16	static

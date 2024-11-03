@@ -2493,58 +2493,58 @@ LOAD c:/users/win/stm32_vxl/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32
                 0x00000000080008ec                __fixdfsi
  *(.text*)
  .text.isButtonPressed
-                0x000000000800093c       0x28 ./Core/Src/Button.o
+                0x000000000800093c       0x34 ./Core/Src/Button.o
                 0x000000000800093c                isButtonPressed
  .text.subKeyProcess
-                0x0000000008000964       0x20 ./Core/Src/Button.o
-                0x0000000008000964                subKeyProcess
+                0x0000000008000970       0x20 ./Core/Src/Button.o
+                0x0000000008000970                subKeyProcess
  .text.getKeyInput
-                0x0000000008000984      0x18c ./Core/Src/Button.o
-                0x0000000008000984                getKeyInput
+                0x0000000008000990      0x18c ./Core/Src/Button.o
+                0x0000000008000990                getKeyInput
  .text.setTimer
-                0x0000000008000b10       0x3c ./Core/Src/Timer.o
-                0x0000000008000b10                setTimer
+                0x0000000008000b1c       0x3c ./Core/Src/Timer.o
+                0x0000000008000b1c                setTimer
  .text.timerRun
-                0x0000000008000b4c       0x58 ./Core/Src/Timer.o
-                0x0000000008000b4c                timerRun
+                0x0000000008000b58       0x58 ./Core/Src/Timer.o
+                0x0000000008000b58                timerRun
  .text.ClearTimer
-                0x0000000008000ba4       0x30 ./Core/Src/Timer.o
-                0x0000000008000ba4                ClearTimer
+                0x0000000008000bb0       0x30 ./Core/Src/Timer.o
+                0x0000000008000bb0                ClearTimer
  .text.display7SEG
-                0x0000000008000bd4      0x31c ./Core/Src/display.o
-                0x0000000008000bd4                display7SEG
+                0x0000000008000be0      0x31c ./Core/Src/display.o
+                0x0000000008000be0                display7SEG
  .text.update7SEG
-                0x0000000008000ef0      0x12c ./Core/Src/display.o
-                0x0000000008000ef0                update7SEG
+                0x0000000008000efc      0x12c ./Core/Src/display.o
+                0x0000000008000efc                update7SEG
  .text.updateClockBuffer1
-                0x000000000800101c       0x64 ./Core/Src/display.o
-                0x000000000800101c                updateClockBuffer1
+                0x0000000008001028       0x64 ./Core/Src/display.o
+                0x0000000008001028                updateClockBuffer1
  .text.updateClockBuffer2
-                0x0000000008001080       0x64 ./Core/Src/display.o
-                0x0000000008001080                updateClockBuffer2
+                0x000000000800108c       0x64 ./Core/Src/display.o
+                0x000000000800108c                updateClockBuffer2
  .text.Time_Counter
-                0x00000000080010e4       0x50 ./Core/Src/display.o
-                0x00000000080010e4                Time_Counter
+                0x00000000080010f0       0x64 ./Core/Src/display.o
+                0x00000000080010f0                Time_Counter
  .text.UpdateMODE
-                0x0000000008001134       0x1e ./Core/Src/display.o
-                0x0000000008001134                UpdateMODE
- *fill*         0x0000000008001152        0x2 
+                0x0000000008001154       0x1e ./Core/Src/display.o
+                0x0000000008001154                UpdateMODE
+ *fill*         0x0000000008001172        0x2 
  .text.fsm_traffic_lights
-                0x0000000008001154      0x86c ./Core/Src/fsm_traffic_lights.o
-                0x0000000008001154                fsm_traffic_lights
- .text.main     0x00000000080019c0       0x7c ./Core/Src/main.o
-                0x00000000080019c0                main
+                0x0000000008001174      0x864 ./Core/Src/fsm_traffic_lights.o
+                0x0000000008001174                fsm_traffic_lights
+ .text.main     0x00000000080019d8       0x7c ./Core/Src/main.o
+                0x00000000080019d8                main
  .text.SystemClock_Config
-                0x0000000008001a3c       0x76 ./Core/Src/main.o
-                0x0000000008001a3c                SystemClock_Config
- *fill*         0x0000000008001ab2        0x6 
+                0x0000000008001a54       0x76 ./Core/Src/main.o
+                0x0000000008001a54                SystemClock_Config
+ *fill*         0x0000000008001aca        0x6 
  .text.MX_TIM2_Init
-                0x0000000008001ab8      0x118 ./Core/Src/main.o
+                0x0000000008001ad0      0x118 ./Core/Src/main.o
  .text.MX_GPIO_Init
-                0x0000000008001bd0       0xc0 ./Core/Src/main.o
+                0x0000000008001be8       0xc0 ./Core/Src/main.o
  .text.HAL_TIM_PeriodElapsedCallback
-                0x0000000008001c90       0x30 ./Core/Src/main.o
-                0x0000000008001c90                HAL_TIM_PeriodElapsedCallback
+                0x0000000008001ca8       0x18 ./Core/Src/main.o
+                0x0000000008001ca8                HAL_TIM_PeriodElapsedCallback
  .text.Error_Handler
                 0x0000000008001cc0        0xa ./Core/Src/main.o
                 0x0000000008001cc0                Error_Handler
@@ -3128,23 +3128,23 @@ LOAD c:/users/win/stm32_vxl/stm32cubeide_1.7.0/stm32cubeide/plugins/com.st.stm32
  .debug_macro   0x0000000000016624      0x198 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
  .debug_macro   0x00000000000167bc      0x197 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
 
-.debug_line     0x0000000000000000     0xb316
- .debug_line    0x0000000000000000      0x7c8 ./Core/Src/Button.o
- .debug_line    0x00000000000007c8       0xbb ./Core/Src/Timer.o
- .debug_line    0x0000000000000883      0x865 ./Core/Src/display.o
- .debug_line    0x00000000000010e8      0x9e1 ./Core/Src/fsm_traffic_lights.o
- .debug_line    0x0000000000001ac9       0x55 ./Core/Src/global_ban.o
- .debug_line    0x0000000000001b1e      0x866 ./Core/Src/main.o
- .debug_line    0x0000000000002384      0x714 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_line    0x0000000000002a98      0x7b2 ./Core/Src/stm32f1xx_it.o
- .debug_line    0x000000000000324a      0x756 ./Core/Src/system_stm32f1xx.o
- .debug_line    0x00000000000039a0       0x86 ./Core/Startup/startup_stm32f103c6ux.o
- .debug_line    0x0000000000003a26      0x983 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_line    0x00000000000043a9      0xb6b ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_line    0x0000000000004f14      0xa06 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
- .debug_line    0x000000000000591a      0xd8f ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
- .debug_line    0x00000000000066a9     0x33d4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
- .debug_line    0x0000000000009a7d     0x1899 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+.debug_line     0x0000000000000000     0xb318
+ .debug_line    0x0000000000000000      0x7cb ./Core/Src/Button.o
+ .debug_line    0x00000000000007cb       0xbb ./Core/Src/Timer.o
+ .debug_line    0x0000000000000886      0x86f ./Core/Src/display.o
+ .debug_line    0x00000000000010f5      0x9de ./Core/Src/fsm_traffic_lights.o
+ .debug_line    0x0000000000001ad3       0x55 ./Core/Src/global_ban.o
+ .debug_line    0x0000000000001b28      0x85e ./Core/Src/main.o
+ .debug_line    0x0000000000002386      0x714 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_line    0x0000000000002a9a      0x7b2 ./Core/Src/stm32f1xx_it.o
+ .debug_line    0x000000000000324c      0x756 ./Core/Src/system_stm32f1xx.o
+ .debug_line    0x00000000000039a2       0x86 ./Core/Startup/startup_stm32f103c6ux.o
+ .debug_line    0x0000000000003a28      0x983 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_line    0x00000000000043ab      0xb6b ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_line    0x0000000000004f16      0xa06 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_line    0x000000000000591c      0xd8f ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_line    0x00000000000066ab     0x33d4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+ .debug_line    0x0000000000009a7f     0x1899 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
 
 .debug_str      0x0000000000000000    0x8246c
  .debug_str     0x0000000000000000    0x7f8af ./Core/Src/Button.o

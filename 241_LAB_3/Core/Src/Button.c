@@ -18,6 +18,7 @@
 
 	int isButtonPressed(int index){
 		if(press_flag[index] == 1){
+		    press_flag[index] = 0;
 			return 1;
 		}
 		return 0;
@@ -27,7 +28,7 @@
 	}
 
 	void getKeyInput(int index){
-		for( int i = 0 ; i < num_of_Buttons; ++i){
+		for( int i = 0 ; i < num_of_Buttons; i++){
 			keyReg0[i] = keyReg1[i];
 			keyReg1[i] = keyReg2[i];
 			if(i == 0){

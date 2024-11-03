@@ -210,8 +210,12 @@ void display7SEG(int num){
 			counter_led_Y--;
 			updateClockBuffer2(counter_led_Y);
 			setTimer(1, 1000);
-
 		}
+		if(timer_flag[1] == 0){
+			counter_led_X = 1;
+			counter_led_Y = 1;
+		}
+
 	}
 		void UpdateMODE(int MODE , int TIME_COUNTER){
 

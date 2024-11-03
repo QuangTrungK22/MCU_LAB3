@@ -47,7 +47,7 @@
 					setTimer(0,Period_green * 1000);
 					counter_led_X = 3;
 					counter_led_Y = 5;
-					setTimer(1,0);
+
 				}
 				Time_Counter();
 				if(timer_flag[2] == 1){
