@@ -1,5 +1,5 @@
 #include "Timer.h"
-
+#define num 5
 	int TIME_CYCLE;
 	int timer_counter[num] ={0};
 	int timer_flag[num] = {0};

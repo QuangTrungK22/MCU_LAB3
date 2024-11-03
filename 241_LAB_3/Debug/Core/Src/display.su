@@ -1,6 +1,6 @@
-display.c:14:6:display7SEG	16	static
-display.c:126:7:update7SEG	16	static
-display.c:171:7:updateClockBuffer1	4	static
-display.c:210:7:updateClockBuffer2	4	static
-display.c:221:7:updateClockBuffer3	4	static
-display.c:231:7:updateClockBuffer4	4	static
+display.c:15:6:display7SEG	16	static
+display.c:127:7:update7SEG	16	static
+display.c:172:7:updateClockBuffer1	16	static
+display.c:184:7:updateClockBuffer2	16	static
+display.c:206:7:Time_Counter	8	static
+display.c:216:8:UpdateMODE	16	static

@@ -26,7 +26,7 @@
 		press_flag[index] = 1;
 	}
 
-	void getKeyInput(){
+	void getKeyInput(int index){
 		for( int i = 0 ; i < num_of_Buttons; ++i){
 			keyReg0[i] = keyReg1[i];
 			keyReg1[i] = keyReg2[i];
@@ -41,12 +41,12 @@
 			}
 			if ((keyReg1[i] == keyReg0[i]) && (keyReg1[i] == keyReg2[i]))
 					{
-						if(keyReg3[i] != keyReg2[i])
+			if(keyReg3[i] != keyReg2[i])
 						{
 							keyReg3[i] = keyReg2[i];
 							if(keyReg2[i] == PRESSED_STATE)
 							{
-								subKeyProcess(i);
+							subKeyProcess(i);
 								if (long_press_flag[i] == 0)
 								{
 									timeOutForKeyPress[i] = 2000 / TIME_CYCLE;
@@ -74,4 +74,5 @@
 						long_press_flag[i] = 0;
 					}
 	   }
-	}
+}
+

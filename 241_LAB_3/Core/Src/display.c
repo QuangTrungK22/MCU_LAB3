@@ -5,6 +5,7 @@
  *      Author: win
  */
 #include "display.h"
+#include "Timer.h"
 const int MAX_LED = 4;
 int index_led = 0;
 int led_buffer[4]={1,2,3,4};
@@ -168,75 +169,52 @@ void display7SEG(int num){
 	 * tương tự với 2 đèn còn lại.
 	 * nếu thời gian của đèn vàng kết thúc, quay lại set up time cho đèn đỏ.
 	 */
-	void updateClockBuffer1()
+	void updateClockBuffer1(int num_led)
 	{
-		if(counter_led_X <= Period_red){
-			led_buffer[0] = (Period_red - counter_led_X) / 10;
-			led_buffer[1] = (Period_red - counter_led_X) % 10;
+		if(num_led < 10){
+			led_buffer[0] = 0 ;
+			led_buffer[1] = num_led;
 		}
-		else if((Period_red + Period_green) >= counter_led_X){
-			led_buffer[0] = ((Period_red + Period_green) - counter_led_X) / 10;
-			led_buffer[1] = ((Period_red + Period_green) - counter_led_X) % 10;
+		else if(num_led >= 10){
+			led_buffer[0] = num_led / 10;
+		    led_buffer[1] = num_led % 10;
 		}
-		else
-		{
-			led_buffer[0] = ((Period_red + Period_green + Period_yellow) - counter_led_X) / 10;
-			led_buffer[1] = ((Period_red + Period_green + Period_yellow) - counter_led_X) % 10;
-		}
-		counter_led_X++;
-		if(counter_led_X > (Period_red + Period_green + Period_yellow)){
-			counter_led_X = 1;
-		}
-
-		if(counter_led_Y <= Period_green){
-					led_buffer[2] = (Period_green - counter_led_Y) / 10;
-					led_buffer[3] = (Period_green - counter_led_Y) % 10;
-				}
-				else if((Period_yellow + Period_green) >= counter_led_Y){
-					led_buffer[2] = ((Period_yellow + Period_green) - counter_led_Y) / 10;
-					led_buffer[3] = ((Period_yellow + Period_green) - counter_led_Y) % 10;
-				}
-				else
-				{
-					led_buffer[2] = ((Period_red + Period_green + Period_yellow) - counter_led_Y) / 10;
-					led_buffer[3] = ((Period_red + Period_green + Period_yellow) - counter_led_Y) % 10;
-				}
-				counter_led_Y++;
-				if(counter_led_Y > (Period_red + Period_green + Period_yellow)){
-					counter_led_Y = 1;
-				}
 
 	}
-	void updateClockBuffer2(){
-		//hiển thị mode
-		led_buffer[0] = 0;
-		led_buffer[1] = 2;
+	void updateClockBuffer2(int num_led){
+		if(num_led < 10){
+					led_buffer[2] = 0 ;
+					led_buffer[3] = num_led;
+				}
+				else if(num_led >= 10){
+					led_buffer[2] = num_led / 10;
+				    led_buffer[3] = num_led % 10;
+				}
 
-		// hiển thị giả trị của led Red
-
-		led_buffer[2] = Period_red / 10;
-		led_buffer[3] = Period_red % 10;
 
 	}
-	void updateClockBuffer3(){
+	//void updateClockBuffer3(){
 			//hiển thị mode
-			led_buffer[0] = 0;
-			led_buffer[1] = 3;
+		//	led_buffer[0] = 0;
+			//led_buffer[1] = 3;
 
 			// hiển thị giả trị của led Yellow
 
-			led_buffer[2] =  Period_yellow / 10;
-			led_buffer[3] =  Period_yellow % 10;
+			//led_buffer[2] =  Period_yellow / 10;
+		//	led_buffer[3] =  Period_yellow % 10;
+	//}
+	void Time_Counter(){
+		if(timer_flag[1] == 1){
+			counter_led_X--;
+			updateClockBuffer1(counter_led_X);
+			counter_led_Y--;
+			updateClockBuffer2(counter_led_Y);
+			setTimer(1, 1000);
+
+		}
 	}
-	void updateClockBuffer4(){
-				//hiển thị mode
-				led_buffer[0] = 0;
-				led_buffer[1] = 4;
+		void UpdateMODE(int MODE , int TIME_COUNTER){
 
-				// hiển thị giả trị của led Yellow
-
-				led_buffer[2] =  Period_green / 10;
-				led_buffer[3] =  Period_green % 10;
-
-
-	}
+					updateClockBuffer1(TIME_COUNTER);
+					updateClockBuffer2(MODE);
+	       }

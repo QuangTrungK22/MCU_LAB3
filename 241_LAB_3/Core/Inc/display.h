@@ -16,9 +16,10 @@ extern int counter_led_X;
 extern int counter_led_Y;
 void display7SEG(int num);
 void update7SEG(int index);
-void updateClockBuffer1();
-void updateClockBuffer2();
+void updateClockBuffer1(int num_led);
+void updateClockBuffer2(int num_led);
 void updateClockBuffer3();
 void updateClockBuffer4();
-
+void Time_Counter();
+void UpdateMODE(int MODE , int TIME_COUNTER);
 #endif /* INC_DISPLAY_H_ */

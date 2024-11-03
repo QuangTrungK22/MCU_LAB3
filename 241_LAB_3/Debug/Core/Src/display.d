@@ -23,7 +23,7 @@ Core/Src/display.o: ../Core/Src/display.c ../Core/Inc/display.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
- ../Core/Inc/global_ban.h
+ ../Core/Inc/global_ban.h ../Core/Inc/Timer.h
 
 ../Core/Inc/display.h:
 
@@ -78,3 +78,5 @@ Core/Src/display.o: ../Core/Src/display.c ../Core/Inc/display.h \
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
 
 ../Core/Inc/global_ban.h:
+
+../Core/Inc/Timer.h:

@@ -98,14 +98,22 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  HAL_GPIO_WritePin(LED_RED_X1_GPIO_Port, LED_RED_X1_Pin, SET);
+  HAL_GPIO_WritePin(LED_GREEN_X1_GPIO_Port, LED_GREEN_X1_Pin, SET);
+  HAL_GPIO_WritePin(LED_YELLOW_X1_GPIO_Port, LED_YELLOW_X1_Pin, SET);
+  HAL_GPIO_WritePin(LED_RED_Y2_GPIO_Port, LED_RED_Y2_Pin, SET);
+  HAL_GPIO_WritePin(LED_GREEN_Y2_GPIO_Port, LED_GREEN_Y2_Pin, SET);
+  HAL_GPIO_WritePin(LED_YELLOW_Y2_GPIO_Port, LED_YELLOW_Y2_Pin, SET);
+  status = MODE_1;
+  setTimer(0, 1);
 
   while (1)
   {
-
+	  fsm_traffic_lights();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  fsm_traffic_lights();
+
   }
   /* USER CODE END 3 */
 }
@@ -241,11 +249,14 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-{
-    timerRun();
-
-  }
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	if(htim -> Instance == TIM2){
+		getKeyInput(0);
+		getKeyInput(1);
+		getKeyInput(2);
+		timerRun();
+	}
+}
 /* USER CODE END 4 */
 
 /**
