@@ -1,9 +1,102 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.6">
   <diagram name="Page-1" id="oRmgAn9RBkeYiWtNE71s">
-    <mxGraphModel>
+    <mxGraphModel dx="1937" dy="-64" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-19" value="par" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="521" y="1185" width="639" height="261" as="geometry" />
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-22" value="" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="b2s6QxwO9Ozb1GlUaeKF-19">
+          <mxGeometry y="189" width="639" as="geometry" />
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-31" value="In-Vehicle Kit (Edge AI)" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="59" y="1560" width="181" height="853" as="geometry" />
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-32" value="Mobile App" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="457" y="1560" width="150" height="853" as="geometry" />
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-33" value="Cloud Backend" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="892" y="1560" width="150" height="853" as="geometry" />
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-34" value="Cloud AI Service" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="1560" width="150" height="853" as="geometry" />
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-35" value="loop" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=40" vertex="1" parent="1">
+          <mxGeometry x="20" y="1684" width="602" height="292" as="geometry" />
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-36" value="[Every Second]" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="b2s6QxwO9Ozb1GlUaeKF-35">
+          <mxGeometry x="40" width="562" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-37" value="par" style="shape=umlFrame;dashed=1;pointerEvents=0;dropTarget=0;strokeColor=#B3B3B3;height=20;width=30" vertex="1" parent="1">
+          <mxGeometry x="521" y="2035" width="905" height="283" as="geometry" />
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-38" value="" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="b2s6QxwO9Ozb1GlUaeKF-37">
+          <mxGeometry x="30" width="875" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-39" value="" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="b2s6QxwO9Ozb1GlUaeKF-37">
+          <mxGeometry y="82" width="905" as="geometry" />
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-40" value="" style="shape=line;dashed=1;whiteSpace=wrap;verticalAlign=top;labelPosition=center;verticalLabelPosition=middle;align=center;strokeColor=#B3B3B3;" vertex="1" parent="b2s6QxwO9Ozb1GlUaeKF-37">
+          <mxGeometry y="211" width="905" as="geometry" />
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-41" value="[1] Process CAN data with Edge AI" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="b2s6QxwO9Ozb1GlUaeKF-31" target="b2s6QxwO9Ozb1GlUaeKF-31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="201" y="1762" />
+              <mxPoint x="201" y="1792" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-42" value="[2] Send &#39;Instant Eco-Score&#39; (e.g., {score: 85})" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="b2s6QxwO9Ozb1GlUaeKF-31" target="b2s6QxwO9Ozb1GlUaeKF-32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="349" y="1844" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-43" value="[3] Update UI instantly" style="curved=1;endArrow=block;rounded=0;" edge="1" parent="1" source="b2s6QxwO9Ozb1GlUaeKF-32" target="b2s6QxwO9Ozb1GlUaeKF-32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="583" y="1896" />
+              <mxPoint x="583" y="1926" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-44" value="[4] Send CAN data &amp; GPS history packages" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="b2s6QxwO9Ozb1GlUaeKF-32" target="b2s6QxwO9Ozb1GlUaeKF-33">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="758" y="2092" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-45" value="[5] Request deep analysis for &#39;Cloud-Calibrated Score&#39;" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;endArrow=block;" edge="1" parent="1" source="b2s6QxwO9Ozb1GlUaeKF-33" target="b2s6QxwO9Ozb1GlUaeKF-34">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1199" y="2169" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-46" value="[6] Return calibrated score &amp; insights" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="b2s6QxwO9Ozb1GlUaeKF-34" target="b2s6QxwO9Ozb1GlUaeKF-33">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1202" y="2221" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-47" value="[7] Push insights or calibration data (less frequently)" style="verticalAlign=bottom;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;endArrow=block;" edge="1" parent="1" source="b2s6QxwO9Ozb1GlUaeKF-33" target="b2s6QxwO9Ozb1GlUaeKF-32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="761" y="2298" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-48" value="Flow 1: Real-time Edge Loop" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="125" y="1635" width="432" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="b2s6QxwO9Ozb1GlUaeKF-49" value="Flow 2: Parallel Cloud Loop for Sync &amp; Calibration" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="507" y="1986" width="485" height="49" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
